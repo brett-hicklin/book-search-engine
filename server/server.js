@@ -16,7 +16,7 @@ const server = new ApolloServer({
   context: authMiddleware,
 });
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/book-search"
+  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/Book-Search"
 );
 
 app.use(express.urlencoded({ extended: false }));
